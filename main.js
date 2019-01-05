@@ -1,6 +1,10 @@
 const input = document.getElementById("password");
-const div = document.getElementsByClassName("message");
-const password = document.getElementsByClassName("password");
+const div = document.querySelector(".message");
+const password = "xyz";
+const message = "Dobrze się spisałeś";
+
 input.addEventListener("input", (e) => {
-    console.log(e.target.value)
+    if (password === e.target.value) {
+        div.textContent = message;
+    }
 })
