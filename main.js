@@ -6,6 +6,7 @@ const message = "Dobrze się spisałeś";
 input.addEventListener("input", (e) => {
     if (password === e.target.value) {
         div.textContent = message;
+        e.target.value = "";
     } else {
         div.textContent = "";
     }
